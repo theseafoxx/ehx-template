@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html class="phone"><!-- change the class name based on the device: phone || tablet -->
 <head>
   <meta charset="UTF-8">
-  <title></title>
-
-
+  <title>Product Title Here</title>
 <style>
 body {
-  font: 11px/13px sans-serif;
+  font: 13px/16px sans-serif;
   margin: 0px;
+  background: url('https://cloud.githubusercontent.com/assets/15451476/11100947/2c99b038-8882-11e5-8c8a-dc29c5de97e1.jpg');
 }
 
-/* Button */
+h1 {
+  font-size: 15px;
+  margin: 0 0 4px 0;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 4px 0;
+}
+
+p {
+  margin-top: 0px;
+}
+
+/* 
+ * Button 
+ */
 a.btnExt {
   background-clip: padding-box;
   -webkit-border-radius: 8px;
@@ -22,6 +38,7 @@ a.btnExt {
   text-decoration: none;
   padding: 4px 10px;
   display: inline-block;
+  white-space: nowrap;
 }
 
 a.btnExt img {
@@ -47,34 +64,84 @@ a.btnExt:active {
   color: yellow;
 }
 
+/* 
+ * Product 
+ */
+html.phone div.productBlock {
+  max-width: 736px;
+  margin: 35px auto;
+}
 
-div.productCopy,
-div.productImage{
+html.tablet div.productBlock {
+  max-width: 1024px;
+  margin: 35px auto;
+}
+
+div.productCopyBlock,
+div.productImageBlock{
   float: left;
 }
-div.productCopy{
+div.productCopyBlock {
   width: 50%;
 }
-div.productImage{
+div.productImageBlock {
   width: 50%;
+}
+div.productImageBlock img{
+  width: 100%;
 }
 
+div.productCopy {
+  margin: 30px 5px 20px 20px;
+}
+
+div.productImage {
+  margin: 0 10px 10px 0;
+}
 </style>
 </head
 
 <body>
 
-<div class="productCopy">
-<a 
-  class="btnExt" 
-  href="https://www.youtube.com/watch?v=SyLowGXOgXA&autohide=1&autoplay=1&modestbranding=1&rel=0"
-  ><img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"> Play Demo Now</a>
-
+<div class="productBlock">
+  <div class="productCopyBlock">
+    <div class="productCopy">
+      <!--
+          Product Copy
+          Change the contents of the h1, h2, and p tags. 
+          Only remove a tag if it will not have content.
+        -->
+      <h1>
+        NEW! Cock Fight
+      </h1>
+      <h2>
+        Cocked/Talking Wah with Fuzz
+      </h2>
+      <p>
+        The Cock Fight lets you achieve that cool cocked wah sound without the wah pedal. Tune in the tone you want. Add the built-in distortion for more grind and growl, or switch to the Talking Wah mode for a stuck voice-box sound.
+      </p>
+      <!-- 
+          Link to demo video 
+          In the a tag href attribute, change the value of v in the url
+        -->
+      <a 
+        href="https://www.youtube.com/watch?autohide=1&autoplay=1&modestbranding=1&rel=0&v=SyLowGXOgXA"
+        class="btnExt" 
+        ><img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"> Play Demo Now</a>
+    </div>
+  </div>
+  <div class="productImageBlock">
+    <div class="productImage">
+      <!-- 
+          Product image
+          In the img tag src attribute, replace the url with the new product url
+        -->
+      <img 
+        src="https://cloud.githubusercontent.com/assets/15451476/11101239/d1eab11c-8883-11e5-8c3a-e0744c8fd4ea.png"
+        >
+    </div>
+  </div>
 </div>
-<div class="productImage">
-  <img src="">
-</div>
-
 
 </body>
 </html>
