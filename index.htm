@@ -2,7 +2,9 @@
 <html class="phone"><!-- change the class name based on the device: phone || tablet -->
 <head>
   <meta charset="UTF-8">
-  <title>Product Title Here</title>
+  <title></title>
+
+
 <style>
 body {
   font: 13px/16px sans-serif;
@@ -41,11 +43,6 @@ a.btnExt {
   white-space: nowrap;
 }
 
-a.btnExt img {
-  width: 40px;
-  vertical-align: middle;
-}
-
 a.btnExt {
   font-weight: bold;
   font-size: 19px;
@@ -62,6 +59,17 @@ a.btnExt:active {
   border-color: yellow;
   background-color: red;
   color: yellow;
+}
+
+a.btnExt img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+a.btnExt span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 6px;
 }
 
 /* 
@@ -106,10 +114,15 @@ div.productImage {
 <div class="productBlock">
   <div class="productCopyBlock">
     <div class="productCopy">
+
       <!--
+
           Product Copy
-          Change the contents of the h1, h2, and p tags. 
+
+          Change the contents of the h1, h2, and p tags.
+ 
           Only remove a tag if it will not have content.
+
         -->
       <h1>
         NEW! Cock Fight
@@ -127,7 +140,7 @@ div.productImage {
       <a 
         href="https://www.youtube.com/watch?autohide=1&autoplay=1&modestbranding=1&rel=0&v=SyLowGXOgXA"
         class="btnExt" 
-        ><img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"> Play Demo Now</a>
+        ><img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"><span>Play Demo Now</span></a>
     </div>
   </div>
   <div class="productImageBlock">
