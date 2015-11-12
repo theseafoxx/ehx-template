@@ -5,28 +5,39 @@
   <title>Product Title Here</title>
 <style>
 body {
-  font: 13px/16px sans-serif;
+  font-family: sans-serif;
+  line-height:1.125em;
   margin: 0px;
   background: url('https://cloud.githubusercontent.com/assets/15451476/11100947/2c99b038-8882-11e5-8c8a-dc29c5de97e1.jpg');
 }
-
+/*
+ * Body copy
+ * To change the size of the product title edit font-size in the h1 selector.
+ * To change the size of the product sub-title edit font-size in the h2 selector.
+ * Please Note: when changing the h1/h2 font sizes pay attention to the spacing, 
+ * you may need to increase the margin on each.
+ *
+ * To change the size of the product copy edit font-size in the p selector.
+ */
 h1 {
-  font-size: 15px;
-  margin: 0 0 4px 0;
+  font-size: 20px;
+  margin: 0 0 7px 0;
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
-  margin: 0 0 4px 0;
+  margin: 0 0 7px 0;
 }
 
 p {
+  font-size: 16px;
   margin-top: 0px;
 }
 
 /* 
  * Button 
+ * To change the size of the button text edit font-size in a.btnExt selector.
  */
 a.btnExt {
   background-clip: padding-box;
@@ -42,8 +53,8 @@ a.btnExt {
 }
 
 a.btnExt {
-  font-weight: bold;
   font-size: 19px;
+  font-weight: bold;
 }
 
 a.btnExt:link,
@@ -75,7 +86,8 @@ a.btnExt span {
  */
  div.productBlock {
   max-width: 736px;
-  margin: 35px auto;
+  max-height: 394px;
+  margin: 20px auto 0;
 }
 
 div.productCopyBlock,
@@ -89,7 +101,12 @@ div.productImageBlock {
   width: 50%;
 }
 div.productImageBlock img{
+  /* if a product image is wider than it is tall use 
   width: 100%;
+   */
+  /* if a product image is taller than it is wide use */
+  height: 100%;
+  /* do NOT use both width and height at the same time, the image will be distorted */
 }
 
 div.productCopy {
@@ -98,6 +115,10 @@ div.productCopy {
 
 div.productImage {
   margin: 0 10px 10px 0;
+}
+
+div.clear{
+  clear: both;
 }
 </style>
 </head
@@ -142,6 +163,7 @@ div.productImage {
         >
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 </body>
